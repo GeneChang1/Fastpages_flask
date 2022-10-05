@@ -6,18 +6,18 @@ app_projects = Blueprint('projects', __name__,
 
 # connects /kangaroos path to render kangaroos.html
 @app_projects.route('/Nathan/')
-def portfolio():
-    return render_template("portfolio.html")
+def Nathan():
+    return render_template("Nathan.html")
 
 # connects /kangaroos path to render kangaroos.html
 @app_projects.route('/Gene/')
-def kangaroos():
-    return render_template("kangaroos.html")
+def Gene():
+    return render_template("Gene.html")
 
 @app_projects.route('/Toby/')
-def walruses():
-    return render_template("walruses.html")
+def Toby():
+    return render_template("Toby.html")
 
 @app_projects.route('/Caleb/')
-def hawkers():
-    return render_template("hawkers.html")
+def Caleb():
+    return render_template("Caleb.html")

@@ -2,20 +2,21 @@
 {% extends "layouts/base.html" %}
 
 <!- This variable sets name of browser tab  -->
-{% set project = "Stubby" %}
+{% set project = "About Me" %}
 
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
     <!- Try building a new body here, bootstrap is a wise choice ->
     <div class="px-5 py-5 mx-auto">
-        <h1 class="text-primary"><strong>Stubby Body</strong></h1>
-        <p class="text-secondary">Put your name here</p>
+        <img class="card-img-top" src="/static/assets/sunset.jpeg" alt="sunset" height="500">
+        <h1 class="text-primary"><strong>About Me</strong></h1>
+        <p class="text-secondary">Gene Chang</p>
+        <li style="color:aliceblue">  Hey! My Name is Gene Chang and I'm an APCSP student. This is my local flask server, as you can see, it is pretty barebones so far but in due time it'll look cool. To see the changes I made from the base, click around!</li>
     </div>
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
-{% block background %}
-{% endblock %}
+
 <div class="px-5 py-5 mx-auto">
     <h1 class="text-primary"><strong>Stubby Body</strong></h1>
     <p class="text-secondary">Put your name here</p>
